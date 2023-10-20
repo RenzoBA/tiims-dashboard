@@ -1,4 +1,8 @@
-Dashboard UI - Tiims test
+Dashboard Responsive UI - Tiims test
+
+## Live Demo
+
+[Dashboard Live Demo](https://tiims-dashboard.vercel.app/)
 
 ## Stack
 
