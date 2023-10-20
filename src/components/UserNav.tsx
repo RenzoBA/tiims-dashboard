@@ -52,7 +52,7 @@ const UserNav: FC = () => {
             </Avatar>
           </SheetTrigger>
 
-          <SheetContent>
+          <SheetContent className="bg-white dark:bg-slate-900">
             <SheetTitle>My Account</SheetTitle>
 
             <Separator className="my-4" />
@@ -141,11 +141,11 @@ const UserNav: FC = () => {
 
           <DropdownMenuContent
             align="end"
-            className="w-56 z-10 shadow rounded-md bg-background border-none"
+            className="w-60 z-10 shadow rounded-md bg-white dark:bg-slate-900 border-none mt-1"
           >
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel className="py-3">My Account</DropdownMenuLabel>
 
-            <DropdownMenuSeparator />
+            <DropdownMenuSeparator className="mx-1" />
 
             <DropdownMenuGroup>
               <DropdownMenuItem>
@@ -162,7 +162,7 @@ const UserNav: FC = () => {
               </DropdownMenuItem>
             </DropdownMenuGroup>
 
-            <DropdownMenuSeparator />
+            <DropdownMenuSeparator className="mx-1" />
 
             <DropdownMenuGroup>
               <DropdownMenuItem>
@@ -198,17 +198,17 @@ const UserNav: FC = () => {
               </DropdownMenuItem>
             </DropdownMenuGroup>
 
-            <DropdownMenuSeparator />
+            <DropdownMenuSeparator className="mx-1" />
 
             <div className="relative flex justify-between cursor-default items-center rounded-sm px-2 py-1.5 text-sm focus:bg-accent focus:text-accent-foreground">
               <span>Dark Mode</span>
               <DarkModeToggle />
             </div>
 
-            <DropdownMenuSeparator />
+            <DropdownMenuSeparator className="mx-1" />
 
             <DropdownMenuItem>
-              <LogOut className="mr-2 h-4 w-4" />
+              <LogOut className="mr-2 h-4 w-4 py-4" />
               <span>Log out</span>
             </DropdownMenuItem>
           </DropdownMenuContent>

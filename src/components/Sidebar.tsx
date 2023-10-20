@@ -19,7 +19,7 @@ const Sidebar: FC = () => {
 
           <SheetContent
             side="left"
-            className="h-full flex flex-col justify-between items-center"
+            className="h-full flex flex-col justify-between items-center bg-white dark:bg-slate-900"
           >
             <SheetTitle className="self-start">
               <Link href="/" className="flex flex-col items-center w-fit">
@@ -156,7 +156,7 @@ const Sidebar: FC = () => {
       </div>
 
       {/* large screens */}
-      <div className="bg-background z-10 w-60 h-full border border-r sm:flex hidden flex-col justify-between items-center py-5">
+      <div className="bg-white dark:bg-slate-900 z-10 w-60 h-full border border-r sm:flex hidden flex-col justify-between items-center py-5">
         <Link href="/" className="flex flex-col items-center w-fit">
           <Image src={logo} width={110} alt="tiims-logo" />
         </Link>

@@ -29,7 +29,7 @@ const NotificationBell: FC<NotificationBellProps> = ({}) => {
             </div>
           </SheetTrigger>
 
-          <SheetContent>
+          <SheetContent className="bg-white dark:bg-slate-900">
             <SheetTitle>Notifications</SheetTitle>
 
             <Separator className="my-4" />
@@ -53,11 +53,13 @@ const NotificationBell: FC<NotificationBellProps> = ({}) => {
 
           <DropdownMenuContent
             align="end"
-            className="w-80 z-10 shadow rounded-md bg-background border-none"
+            className="w-80 z-10 shadow rounded-md bg-white dark:bg-slate-900 border-none mt-1"
           >
-            <DropdownMenuLabel>Notifications</DropdownMenuLabel>
+            <DropdownMenuLabel className="py-3">
+              Notifications
+            </DropdownMenuLabel>
 
-            <DropdownMenuGroup className="mt-4">
+            <DropdownMenuGroup className="px-1 pb-1">
               <NotificationsList />
             </DropdownMenuGroup>
           </DropdownMenuContent>

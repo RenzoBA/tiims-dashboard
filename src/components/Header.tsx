@@ -14,13 +14,13 @@ interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
   return (
-    <div className="fixed top-0 inset-x-0 sm:pl-60 h-fit bg-background z-10 py-4">
+    <div className="fixed top-0 inset-x-0 sm:pl-48 h-fit bg-slate-100 dark:bg-slate-950 z-10 py-4">
       <div className="container px-4 sm:px-8 max-w-full w-full h-full flex items-center justify-between">
         <div className="sm:flex items-center hidden">
           <h1 className="text-muted-foreground text-xs">
             Project:{" "}
-            <span className="uppercase font-semibold text-lg text-primary">
-              My coolest project
+            <span className="uppercase font-semibold text-lg text-primary truncate">
+              My project
             </span>
           </h1>
           <TooltipProvider>
@@ -29,13 +29,12 @@ const Header: FC<HeaderProps> = ({}) => {
                 <Info className="ml-2 h-5 w-5 cursor-pointer text-muted-foreground hover:text-primary" />
               </TooltipTrigger>
               <TooltipContent
-                className="border-none bg-muted-foreground text-primary-foreground"
+                className="border-none dark:bg-slate-900 bg-white text-primary"
                 align="start"
               >
                 <p>
                   This project was created <strong>10d ago</strong> by{" "}
-                  <strong>Tiims</strong>. Description: The coolest project is a
-                  tech project related with ...
+                  <strong>Tiims</strong>.
                 </p>
               </TooltipContent>
             </Tooltip>
